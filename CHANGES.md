@@ -31,6 +31,15 @@ usual beta standards.
 * [VIM-2744](https://youtrack.jetbrains.com/issue/VIM-2744) Fix undo from ex line
 * [VIM-2749](https://youtrack.jetbrains.com/issue/VIM-2749) Fix :tabn and :tabN commands
 * [VIM-2718](https://youtrack.jetbrains.com/issue/VIM-2718) Fixed case where the primary caret was changed
+* [VIM-2728](https://youtrack.jetbrains.com/issue/VIM-2728) Give access to global variables
+* [VIM-2723](https://youtrack.jetbrains.com/issue/VIM-2723) Move focus to editor after :q
+* [VIM-2710](https://youtrack.jetbrains.com/issue/VIM-2710) Show options value on `set opt`
+* [VIM-2691](https://youtrack.jetbrains.com/issue/VIM-2691) Save file on :w
+* [VIM-2227](https://youtrack.jetbrains.com/issue/VIM-2227) Wrong behavior when deleting / changing surround with invalid character
+* [VIM-2675](https://youtrack.jetbrains.com/issue/VIM-2675) Fix numbering register in visual mode
+* [VIM-2595](https://youtrack.jetbrains.com/issue/VIM-2595) Support plugins in macro execution
+* [VIM-2671](https://youtrack.jetbrains.com/issue/VIM-2671) Fix using plugins from mappings
+* [VIM-2604](https://youtrack.jetbrains.com/issue/VIM-2604) Update action execution rules
 
 ## 1.11.0, 2022-08-09
 
