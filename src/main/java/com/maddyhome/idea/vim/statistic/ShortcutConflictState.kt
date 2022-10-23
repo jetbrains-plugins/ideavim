@@ -21,8 +21,6 @@ package com.maddyhome.idea.vim.statistic
 import com.intellij.internal.statistic.beans.MetricEvent
 import com.intellij.internal.statistic.eventLog.EventLogGroup
 import com.intellij.internal.statistic.eventLog.events.EventFields
-import com.intellij.internal.statistic.eventLog.events.EventPair
-import com.intellij.internal.statistic.eventLog.events.StringListEventField
 import com.intellij.internal.statistic.service.fus.collectors.ApplicationUsagesCollector
 import com.maddyhome.idea.vim.VimPlugin
 import com.maddyhome.idea.vim.api.injector
@@ -42,8 +40,8 @@ internal class ShortcutConflictState : ApplicationUsagesCollector() {
       getHandlersForShortcut(keystroke)
         .filter { !setOf(HandledModes.INSERT_UNDEFINED, HandledModes.NORMAL_UNDEFINED, HandledModes.VISUAL_AND_SELECT_UNDEFINED).contains(it) }
         .forEach { mode ->
-        metrics += HANDLER.metric(injector.parser.toKeyNotation(keystroke), mode)
-      }
+          metrics += HANDLER.metric(injector.parser.toKeyNotation(keystroke), mode)
+        }
     }
     return metrics
   }
